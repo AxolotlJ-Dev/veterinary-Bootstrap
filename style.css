@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+header p{
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff;
+  margin-bottom: 0;
+  color: #000;
+}
+
+.fontPla{
+  color: #000;
+  font-family: 'Playfair Display', serif;
+}
+
+header .logo{
+  width: 100%;
+}
+
+.content{
+  width: 100%;
+  padding: 0;
+}
+
+.description{
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.imgText{
+  background-color: #a9e3f5;
+  border: 2px solid #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.imgText p{
+  font-weight: bold;
+  text-align: center;
+}
+
+.carde{
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  height: 350px;
+  width: 400px;
+}
+
+.carde .face{
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.carde .front{
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.carde .front img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carde .front h3{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.carde .back{
+  transform:  perspective(600px) rotateY(180deg );
+  background: #007fc8;
+  padding: 15px;
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
+}
+
+.carde:hover .front{
+  transform:  perspective(600px) rotateY(180deg );
+}
+
+.carde:hover .back{
+  transform:  perspective(600px) rotateY(360deg );
+}
+
+.cardeI{
+  margin-top: 30px;
+  display: flex;
+  place-content: center;
+}
+
+
+.infoOne{
+  color: #000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.Puntos{
+  color: #000;
+  font-weight: bold;
+}
+
+.Contact{
+  color: #fff;
+  border-top:5px solid rgb(0, 136, 255);
+  background: #000000;
+  position: relative;
+  text-align: center;
+}
+
+.Links{
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.Links:hover{
+  color: #686868;
+}
